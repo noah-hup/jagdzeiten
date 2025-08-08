@@ -242,22 +242,10 @@ function createStateCards() {
     Object.keys(statesData).forEach((state, index) => {
         const card = document.createElement('div');
         card.className = 'state-card';
-        card.style.animationDelay = `${index * 0.15}s`;
         card.innerHTML = `
             <h3>${state}</h3>
             <p>${statesData[state].description}</p>
         `;
-        
-        // Touch-Feedback für iPhone
-        card.addEventListener('touchstart', () => {
-            card.style.transform = 'scale(0.95)';
-        });
-        
-        card.addEventListener('touchend', () => {
-            setTimeout(() => {
-                card.style.transform = '';
-            }, 100);
-        });
         
         card.addEventListener('click', () => openModal(state));
         statesGrid.appendChild(card);

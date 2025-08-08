@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jagdzeiten Deutschland</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🦌 Jagdzeiten Deutschland</h1>
+        </header>
+        
+        <nav class="tabs">
+            <button class="tab-btn active" data-tab="bundeslaender">Bundesländer</button>
+        </nav>
+        
+        <main>
+            <div id="bundeslaender" class="tab-content active">
+                <div class="state-selector">
+                    <select id="state-dropdown" class="state-dropdown">
+                        <option value="bw">Baden-Württemberg</option>
+                        <option value="bayern">Bayern</option>
+                        <option value="berlin">Berlin</option>
+                        <option value="brandenburg">Brandenburg</option>
+                        <option value="bremen">Bremen</option>
+                        <option value="hamburg">Hamburg</option>
+                        <option value="hessen">Hessen</option>
+                        <option value="mv">Mecklenburg-Vorpommern</option>
+                        <option value="niedersachsen">Niedersachsen</option>
+                        <option value="nrw" selected>Nordrhein-Westfalen</option>
+                        <option value="rlp">Rheinland-Pfalz</option>
+                        <option value="saarland">Saarland</option>
+                        <option value="sachsen">Sachsen</option>
+                        <option value="sachsen-anhalt">Sachsen-Anhalt</option>
+                        <option value="sh">Schleswig-Holstein</option>
+                        <option value="thueringen">Thüringen</option>
+                    </select>
+                </div>
+                
+                <div id="nrw" class="state-content active">
+                    <h2>Jagdzeiten in Nordrhein-Westfalen</h2>
+                    <p class="info">Die Jagd darf ausgeübt werden unter Berücksichtigung des Bundes- und Landesrechts: (Stand 01. Februar 2023)</p>
+                    
+                    <div class="hunting-tables">
+                        <div class="table-section">
+                            <h3>Rotwild</h3>
+                            <table class="hunting-table">
+                                <thead>
+                                    <tr>
+                                        <th>Art</th>
+                                        <th>vom</th>
+                                        <th>bis</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Kälber</td>
+                                        <td>01. August</td>
+                                        <td>31. Januar</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Schmalspießer</td>
+                                        <td>01. Mai<br>01. August</td>
+                                        <td>31. Mai<br>31. Januar</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Schmaltiere</td>
+                                        <td>01. Mai<br>01. August</td>
+                                        <td>31. Mai<br>31. Januar</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hirsche u. Alttiere</td>
+                                        <td>01. August</td>
+                                        <td>31. Januar</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="table-section">
+                            <h3>Dam- u. Sikawild</h3>
+                            <table class="hunting-table">
+                                <thead>
+                                    <tr>
+                                        <th>Art</th>
+                                        <th>vom</th>
+                                        <th>bis</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Kälber</td>
+                                        <td>01. August</td>
+                                        <td>31. Januar</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Schmalspießer</td>
+                                        <td>01. Mai<br>01. August</td>
+                                        <td>31. Mai<br>31. Januar</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Schmaltiere</td>
+                                        <td>01. Mai<br>01. August</td>
+                                        <td>31. Mai<br>31. Januar</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hirsche u. Alttiere</td>
+                                        <td>01. August</td>
+                                        <td>31. Januar</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="table-section">
+                            <h3>Rehwild</h3>
+                            <table class="hunting-table">
+                                <thead>
+                                    <tr>
+                                        <th>Art</th>
+                                        <th>vom</th>
+                                        <th>bis</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Kitze</td>
+                                        <td>01. September</td>
+                                        <td>31. Januar</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Schmalrehe</td>
+                                        <td>01. Mai<br>01. September</td>
+                                        <td>31. Mai<br>31. Januar</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ricken</td>
+                                        <td>01. September</td>
+                                        <td>31. Januar</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Böcke</td>
+                                        <td>01. Mai</td>
+                                        <td>31. Januar</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="table-section">
+                            <h3>Muffelwild</h3>
+                            <table class="hunting-table">
+                                <thead>
+                                    <tr>
+                                        <th>Art</th>
+                                        <th>vom</th>
+                                        <th>bis</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Muffelwild</td>
+                                        <td>01. August</td>
+                                        <td>31. Januar</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="table-section">
+                            <h3>Schwarzwild</h3>
+                            <table class="hunting-table">
+                                <thead>
+                                    <tr>
+                                        <th>Art</th>
+                                        <th>vom</th>
+                                        <th>bis</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Schwarzwild<br><em>Frischlinge (nicht einjährige Stücke)</em></td>
+                                        <td>01. August<br>ganzjährig</td>
+                                        <td>31. Januar *<br>ganzjährig</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="table-section">
+                            <h3>Niederwild</h3>
+                            <table class="hunting-table">
+                                <thead>
+                                    <tr>
+                                        <th>Art</th>
+                                        <th>vom</th>
+                                        <th>bis</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Feldhasen</td>
+                                        <td>16. Oktober</td>
+                                        <td>31. Dezember</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Wildkaninchen<br><em>Jungkaninchen</em></td>
+                                        <td>16. Oktober<br>ganzjährig</td>
+                                        <td>28. Februar<br>ganzjährig</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fasanen</td>
+                                        <td>16. Oktober</td>
+                                        <td>15. Januar</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Wildtruthähne</td>
+                                        <td>16. März</td>
+                                        <td>30. April</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="table-section">
+                            <h3>Raubwild</h3>
+                            <table class="hunting-table">
+                                <thead>
+                                    <tr>
+                                        <th>Art</th>
+                                        <th>vom</th>
+                                        <th>bis</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Füchse<br><em>Jungfüchse</em></td>
+                                        <td>16. Juli<br>ganzjährig</td>
+                                        <td>28. Februar<br>ganzjährig</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Minke</td>
+                                        <td>16. Oktober</td>
+                                        <td>28. Februar</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Waschbär<br><em>Jungwaschbären</em></td>
+                                        <td>01. August<br>ganzjährig</td>
+                                        <td>28. Februar<br>ganzjährig</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Marderhund<br><em>Jungmarderhunde</em></td>
+                                        <td>01. September<br>ganzjährig</td>
+                                        <td>28. Februar<br>ganzjährig</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Steinmarder</td>
+                                        <td>16. Oktober</td>
+                                        <td>28. Februar</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Iltisse</td>
+                                        <td>16. Oktober</td>
+                                        <td>28. Februar</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hermeline</td>
+                                        <td>01. September</td>
+                                        <td>28. Februar</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dachse<br><em>Jungdachse</em></td>
+                                        <td>01. September<br>ganzjährig</td>
+                                        <td>31. Dezember<br>ganzjährig</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="table-section">
+                            <h3>Federwild</h3>
+                            <table class="hunting-table">
+                                <thead>
+                                    <tr>
+                                        <th>Art</th>
+                                        <th>vom</th>
+                                        <th>bis</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Ringeltauben **</td>
+                                        <td>01. November</td>
+                                        <td>20. Februar</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Höckerschwäne</td>
+                                        <td>01. November</td>
+                                        <td>20. Februar</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Graugänse</td>
+                                        <td>16. Juli</td>
+                                        <td>31. Januar<br><em>mit Ausnahme der unten angeführten Beschränkung***</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kanadagänse</td>
+                                        <td>16. Juli</td>
+                                        <td>31. Januar<br><em>mit Ausnahme der unten angeführten Beschränkung***</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nilgänse<br><em>Juvenile Nilgänse</em></td>
+                                        <td>16. Juli<br>ganzjährig</td>
+                                        <td>31. Januar<br><em>mit Ausnahme der unten angeführten Beschränkung***</em><br>ganzjährig</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Stockenten</td>
+                                        <td>16. September</td>
+                                        <td>15. Januar</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Waldschnepfe</td>
+                                        <td>16. Oktober</td>
+                                        <td>15. Januar</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Rabenkrähe</td>
+                                        <td>01. August</td>
+                                        <td>10. März</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Elster</td>
+                                        <td>01. August</td>
+                                        <td>28. Februar</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kormoran<br><em>Jungkormorane</em><br><em>Siehe Kormoranver-Ordnung</em></td>
+                                        <td>16. August<br>02. März</td>
+                                        <td>01. März<br>15. August<br>****</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="table-section">
+                            <h3>Sonstige</h3>
+                            <table class="hunting-table">
+                                <thead>
+                                    <tr>
+                                        <th>Art</th>
+                                        <th>vom</th>
+                                        <th>bis</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Bisam und Nutria</td>
+                                        <td>ganzjährig</td>
+                                        <td>ganzjährig</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="bayern" class="state-content">
+                    <h2>Jagdzeiten in Bayern</h2>
+                    <p class="info">Jagdzeiten werden geladen...</p>
+                </div>
+                
+                <div id="niedersachsen" class="state-content">
+                    <h2>Jagdzeiten in Niedersachsen</h2>
+                    <p class="info">Jagdzeiten werden geladen...</p>
+                </div>
+                
+                <div id="bw" class="state-content">
+                    <h2>Jagdzeiten in Baden-Württemberg</h2>
+                    <p class="info">Jagdzeiten werden geladen...</p>
+                </div>
+                
+                <div id="hessen" class="state-content">
+                    <h2>Jagdzeiten in Hessen</h2>
+                    <p class="info">Jagdzeiten werden geladen...</p>
+                </div>
+                
+                <div id="rlp" class="state-content">
+                    <h2>Jagdzeiten in Rheinland-Pfalz</h2>
+                    <p class="info">Jagdzeiten werden geladen...</p>
+                </div>
+                
+                <div id="saarland" class="state-content">
+                    <h2>Jagdzeiten im Saarland</h2>
+                    <p class="info">Jagdzeiten werden geladen...</p>
+                </div>
+                
+                <div id="sachsen" class="state-content">
+                    <h2>Jagdzeiten in Sachsen</h2>
+                    <p class="info">Jagdzeiten werden geladen...</p>
+                </div>
+                
+                <div id="sachsen-anhalt" class="state-content">
+                    <h2>Jagdzeiten in Sachsen-Anhalt</h2>
+                    <p class="info">Jagdzeiten werden geladen...</p>
+                </div>
+                
+                <div id="thueringen" class="state-content">
+                    <h2>Jagdzeiten in Thüringen</h2>
+                    <p class="info">Jagdzeiten werden geladen...</p>
+                </div>
+                
+                <div id="brandenburg" class="state-content">
+                    <h2>Jagdzeiten in Brandenburg</h2>
+                    <p class="info">Jagdzeiten werden geladen...</p>
+                </div>
+                
+                <div id="mv" class="state-content">
+                    <h2>Jagdzeiten in Mecklenburg-Vorpommern</h2>
+                    <p class="info">Jagdzeiten werden geladen...</p>
+                </div>
+                
+                <div id="sh" class="state-content">
+                    <h2>Jagdzeiten in Schleswig-Holstein</h2>
+                    <p class="info">Jagdzeiten werden geladen...</p>
+                </div>
+                
+                <div id="hamburg" class="state-content">
+                    <h2>Jagdzeiten in Hamburg</h2>
+                    <p class="info">Jagdzeiten werden geladen...</p>
+                </div>
+                
+                <div id="bremen" class="state-content">
+                    <h2>Jagdzeiten in Bremen</h2>
+                    <p class="info">Jagdzeiten werden geladen...</p>
+                </div>
+                
+                <div id="berlin" class="state-content">
+                    <h2>Jagdzeiten in Berlin</h2>
+                    <p class="info">Jagdzeiten werden geladen...</p>
+                </div>
+            </div>
+
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

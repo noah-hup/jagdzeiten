@@ -327,7 +327,8 @@ function filterStates() {
         
         if (matchFound) {
             card.style.display = 'block';
-            card.style.animation = 'fadeInUp 0.3s ease';
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
             visibleCount++;
         } else {
             card.style.display = 'none';

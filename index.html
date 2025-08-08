@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HuntTracker - Jagd App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">🦌</span>
+                    <h1>HuntTracker</h1>
+                </div>
+                <nav class="nav">
+                    <button class="nav-btn active" data-tab="dashboard">Dashboard</button>
+                    <button class="nav-btn" data-tab="map">Karte</button>
+                    <button class="nav-btn" data-tab="log">Jagdtagebuch</button>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Dashboard Tab -->
+            <div class="tab-content active" id="dashboard">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">🎯</div>
+                        <div class="stat-info">
+                            <h3>Erfolgreiche Jagden</h3>
+                            <span class="stat-number">12</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">📍</div>
+                        <div class="stat-info">
+                            <h3>Reviere</h3>
+                            <span class="stat-number">3</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">⏱️</div>
+                        <div class="stat-info">
+                            <h3>Stunden im Revier</h3>
+                            <span class="stat-number">48</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recent-activity">
+                    <h2>Letzte Aktivitäten</h2>
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <div class="activity-icon">🦌</div>
+                            <div class="activity-details">
+                                <h4>Rehbock erlegt</h4>
+                                <p>Waldrevier Nord • Heute, 06:30</p>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon">📸</div>
+                            <div class="activity-details">
+                                <h4>Wildkamera aufgestellt</h4>
+                                <p>Hochsitz 7 • Gestern, 18:45</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Map Tab -->
+            <div class="tab-content" id="map">
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <div class="map-icon">🗺️</div>
+                        <h3>Revierkarte</h3>
+                        <p>Hier würde die interaktive Karte angezeigt</p>
+                    </div>
+                    <div class="map-controls">
+                        <button class="control-btn">📍 Standort hinzufügen</button>
+                        <button class="control-btn">🎯 Jagdplatz markieren</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Log Tab -->
+            <div class="tab-content" id="log">
+                <div class="log-header">
+                    <h2>Jagdtagebuch</h2>
+                    <button class="add-btn">+ Eintrag hinzufügen</button>
+                </div>
+                <div class="log-entries">
+                    <div class="log-entry">
+                        <div class="log-date">15. Nov 2024</div>
+                        <div class="log-content">
+                            <h4>Morgenjagd im Waldrevier</h4>
+                            <p>Rehbock bei Sonnenaufgang am Waldrand gesichtet und erfolgreich erlegt.</p>
+                            <div class="log-tags">
+                                <span class="tag">Rehwild</span>
+                                <span class="tag">Erfolg</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
